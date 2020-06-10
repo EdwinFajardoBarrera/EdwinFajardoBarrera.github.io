@@ -24,11 +24,6 @@
 
 /* SERVICES */
 
-.service {
-  display: flex;
-  flex-direction: column;
-}
-
 .service-content {
   margin-top: 64px;
   display: flex;
@@ -38,7 +33,6 @@
 }
 
 .service-content > .service-description {
-  background: #FFFFFF;
   box-shadow: 0px 10px 0px #96D9D4;
 }
 
@@ -78,16 +72,18 @@
 
 .btn > .icon-phone {
   background: url(icons/phone.png) no-repeat;
+  background-size: 45%;
   float: left;
   width: 70px;
-  height: 50px;
+  height: 30px;
 }
 
 .btn > .icon-heart {
   background: url(icons/heart.png) no-repeat;
+  background-size: 50%;
   float: left;
   width: 70px;
-  height: 50px;
+  height: 30px;
 }
 
 .btn:hover {
@@ -100,17 +96,33 @@
 }
 
 .services {
-  margin: 50px;
+  margin: 0px 50px 50px 50px ;
 }
 
 .service-item {
   display: flex;
   flex-direction: row;
-  
+}
+
+.block-image > .image {
+  background-size: 100%;
+  width: 500px;
+  height: 350px;
+}
+
+.block-image > .image.websites {
+  background: url(images/websites.png) no-repeat;
+}
+
+.block-image > .image.webapps {
+  background: url(images/webapps.png) no-repeat;
+}
+
+.block-image > .image.apps {
+  background: url(images/apps.png) no-repeat;
 }
 
 .service-item > .service-explanation {
-  width: 500px; 
   margin: 150px 0px 150px 300px;
 }
 
@@ -124,17 +136,17 @@
 
 .rooster-feets {
   position: absolute;
-  width: 209.15px;
-  height: 582.22px;
-  left: 577.69px;
+  width: 209px;
+  height: 582px;
+  left: 560px;
   bottom: -550px;
   background: url(images/roosterFeet.png) no-repeat;
-  transform: rotate(-133deg);
+  transform: rotate(-120deg);
 }
 
 .second-path {
   bottom: -1050px;
-  transform: rotate(133deg);
+  transform: rotate(115deg);
 }
 
 /* INDEX */
@@ -302,6 +314,117 @@ figure.work > img.work-img {
 
 
 @media screen and (max-width: 426px) {
+
+  /* SERVICES */
+
+  .service-content {
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+  }  
+
+  .service-content > .service-description {
+    margin: 0px 24px;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .service-description {
+    
+    margin-bottom: 1rem;
+  }
+
+  .service-description > h1.title {
+    font-size: 1.9rem;
+    letter-spacing: 0px;
+    margin: 16px 0px;
+  }
+
+  .service-description > p.subtitle {
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+    margin: 16px 0px;
+  }
+
+  .block-btn > .btn {
+    width: 160px;
+    height: 50px;
+    margin: 32px 0px 0px 0px;
+  }
+
+  .btn > .service-btn {
+    font-size: 1rem;
+  }
+
+  .btn > .icon-phone {
+    background-size: 50%;
+    width: 40px;
+  }
+
+  .btn > .icon-heart {
+    background-size: 50%;
+    width: 40px;
+  }
+
+  .service-examples {
+    margin: 0px;
+  }
+
+  .service-item {
+    display: flex;
+    flex-direction: column;   
+  }
+
+  .block-image > .image {
+    background-size: 0;
+    width: 0px;
+    height: 0px;
+  }
+
+  .block-image > .image.websites,
+  .block-image > .image.webapps,
+  .block-image > .image.apps {
+    background: none;
+  }
+
+  .rooster-feets {
+    background: none;
+    position: none;
+    width: 0px;
+    height: 0px;
+    left: 0px;
+    bottom: 0px;
+  }
+
+  .service-item > .service-explanation {
+    margin: 0px;
+  }
+
+  .block-image > .mobile-image.websites {
+    background: url(images/websites.png) no-repeat;
+    background-size: 105%;
+    width: 330px;
+    height: 300px;
+  }
+  
+  .block-image > .mobile-image.webapps {
+    background: url(images/webapps.png) no-repeat;
+    background-size: 105%;
+    width: 330px;
+    height: 300px;
+  }
+  
+  .block-image > .mobile-image.apps {
+    background: url(images/apps.png) no-repeat;
+    background-size: 105%;
+    width: 330px;
+    height: 300px;
+  }
+
+  /* INDEX */
   
   .nav-links {
     display: none;
