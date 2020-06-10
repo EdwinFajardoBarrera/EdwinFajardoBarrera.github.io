@@ -5,6 +5,7 @@
   --accent-color: #97D7D0;
   --green-darken: #1B403C;
   --blue-light: #A1B5DC;
+  --subtitles-color: #738CBF;
   --nav-height: 12vh;
   --footer-height: 6vh;
   --content-height: 82vh;
@@ -20,6 +21,123 @@
   padding: 0;
   font-family: var(--font);
 }
+
+/* SERVICES */
+
+.service {
+  display: flex;
+  flex-direction: column;
+}
+
+.service-content {
+  margin-top: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.service-content > .service-description {
+  background: #FFFFFF;
+  box-shadow: 0px 10px 0px #96D9D4;
+}
+
+.service-description > h1.title {
+  font-size: 3.3vw;
+  letter-spacing: 5px;
+  margin: 24px 0px;
+}
+
+.service-description > p.subtitle {
+  font-size: 2vw;
+  letter-spacing: 2px;
+  margin: 0px 0px 24px 0px;
+}
+
+.block-btn {
+  display: flex;
+  flex-direction: column;
+}
+
+.block-btn > .btn {
+  width: 18vw;
+  background-color: var(--accent-color);
+  padding: 16px 8px;
+  margin: 16px 0px 16px 64px;
+}
+
+.btn > .service-btn { 
+  padding-top: 5px;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  color: var(--green-darken);
+  align-items: center;
+}
+
+.btn > .icon-phone {
+  background: url(icons/phone.png) no-repeat;
+  float: left;
+  width: 70px;
+  height: 50px;
+}
+
+.btn > .icon-heart {
+  background: url(icons/heart.png) no-repeat;
+  float: left;
+  width: 70px;
+  height: 50px;
+}
+
+.btn:hover {
+  transition: ease-in-out background-color .5s;
+  background-color: var(--blue-light);
+}
+
+.service-examples {
+  margin: 128px var(--page-margin);
+}
+
+.services {
+  margin: 50px;
+}
+
+.service-item {
+  display: flex;
+  flex-direction: row;
+  
+}
+
+.service-item > .service-explanation {
+  width: 500px; 
+  margin: 150px 0px 150px 300px;
+}
+
+.service-item > .inverse {
+  margin: 150px 300px 150px 0px;
+}
+
+.service-explanation > .service-title {
+  color: var(--subtitles-color);
+}
+
+.rooster-feets {
+  position: absolute;
+  width: 209.15px;
+  height: 582.22px;
+  left: 577.69px;
+  bottom: -550px;
+  background: url(images/roosterFeet.png) no-repeat;
+  transform: rotate(-133deg);
+}
+
+.second-path {
+  bottom: -1050px;
+  transform: rotate(133deg);
+}
+
+/* INDEX */
 
 .landing-page {
   height: 100vh;
@@ -295,5 +413,7 @@ figure.work > img.work-img {
   .footer {
     font-size: 2.5vw;
   }
+
+
 
 }
