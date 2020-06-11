@@ -151,7 +151,7 @@ div.menu {
   position: fixed;
   height: 100vh;
   transform: translateY(-100%);
-  background:linear-gradient(rgba(255,255,255,.8), rgba(255,255,255,.8)), url('mmmpatas-mobile.png');
+  background:linear-gradient(rgba(255,255,255,.8), rgba(255,255,255,.8)), url('images/mmmpatas-mobile.png');
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -405,7 +405,7 @@ figure.work > img.work-img {
   }
 
   main.content {
-    background:linear-gradient(rgba(255,255,255,.8), rgba(255,255,255,.8)), url('mmmpatas-mobile.png');
+    background:linear-gradient(rgba(255,255,255,.8), rgba(255,255,255,.8)), url('images/mmmpatas-mobile.png');
     background-repeat: no-repeat;
     background-position: center;
   }
