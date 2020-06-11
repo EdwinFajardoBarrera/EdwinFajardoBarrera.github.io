@@ -279,7 +279,6 @@ div.menu-open {
 .nav-link {
   font-size: 1.6vw;
   margin: 0px 2%; 
-  /* color: black; */
 }
 
 .nav-link > a {
@@ -596,4 +595,15 @@ figure.work > img.work-img {
     font-size: 2.5vw;
   }
 
+}
+
+
+@media screen and (max-width: 768px) {
+  .footer {
+    font-size: 1.5vw;
+  }
+
+  .nav-link {
+    font-size: 2.3vw;
+  }
 }
