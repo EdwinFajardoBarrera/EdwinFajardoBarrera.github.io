@@ -25,6 +25,8 @@
 
 .contact-engagement {
   text-align: center;
+  margin: 3% 0px;
+  /* border: 1px solid black; */
 }
 
 .contact-engagement > h1{
@@ -36,30 +38,103 @@
   font-size: 2vw;
   letter-spacing: 2px;
 }
-.contact-container{
+
+.contact-container {
+  position: relative;
   display: flex;
-  
-  margin: 0px 144px;
-  
-  
-  
+  /* height: 50vh; */
+  /* margin: 0px 64px; */
+  justify-content: center;
+  /* margin: 0px 144px; */
+  /* border: 1px solid black; */
 }
 
-.colab-img{
-  max-width: 4000px;
-  max-height: 300px;
+.patas {
+  position: absolute;
+  left: 10%;
+  height: 100%;
+  opacity: 32%;
+  z-index: -1;
 }
+
 
 .form {
+  /* border: 1px solid black; */
+  /* z-index: -1; */
+  display: flex;
+  flex-direction: column;
+
+  /* border: 1px solid black; */
+}
+
+.form-container {
+  padding: 32px;
+}
+
+.input {
+  margin: 2% 0px;
+  height: 15%;
+  width: 100%;
+  background-color: transparent;
+  font-weight: bold;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  /* font-size: 1.1rem; */
+}
+
+.input:hover {
+  border: 1px solid var(--secondary-color);
+}
+
+.input:focus {
+  border: 1.5px solid var(--secondary-color);
+}
+
+
+.text-area:hover {
+  border: 1px solid var(--secondary-color);
+}
+
+.text-area:focus {
+  border: 1.5px solid var(--secondary-color);
+}
+
+.text-area {
+  margin: 2% 0px;
+  height: 25%;
+}
+
+.colab {
+ width: 25vw;
+ margin-left: 10vw;
+ /* margin-right: 20vw; */
+ /* border: 1px solid black; */
+}
+
+.colab-img {
+  width: 100%;
+}
+
+.text-area {
+  background-color: transparent;
+  font-weight: bold;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* .form {
   background:linear-gradient(rgba(255,255,255,.8), rgba(255,255,255,.8)), url('images/mmmpatas-mobile.png');
   background-repeat: no-repeat;
   padding-left: 168px;
   padding-top: 40px;
-}
+} */
 
-
-
-input[type=text], select {
+/* input[type=text], select {
   background-color: transparent;
   font: var(--font);
   font-weight: bold;
@@ -71,7 +146,7 @@ input[type=text], select {
   box-sizing: border-box;
 }
 
-textarea{
+textarea {
   
   width: 400px;
   background-color: transparent;
@@ -97,7 +172,7 @@ input[type=submit] {
 
 input[type=submit]:hover {
   background-color: #45a049;
-}
+} */
 
 
 
@@ -413,7 +488,7 @@ img.bg {
   margin: 0px 0px 24px 0px;
 }
 
-.info > a.call2action {
+.call2action {
   text-decoration: none;
   font-size: 1vw;
   background-color: var(--accent-color);
@@ -424,6 +499,17 @@ img.bg {
   text-align: center;
   z-index: 5;
 }
+/* .info > a.call2action {
+  text-decoration: none;
+  font-size: 1vw;
+  background-color: var(--accent-color);
+  color: var(--green-darken);
+  padding: 8px 32px;
+  font-weight: bold;
+  width: 15vw;
+  text-align: center;
+  z-index: 5;
+} */
 
 a.call2action:hover {
   transition: ease-in-out background-color .5s;
@@ -645,7 +731,7 @@ figure.work > img.work-img {
     letter-spacing: 1px;
   }
 
-  .info > a.call2action {
+  a.call2action {
     align-self: center;
     width: 160px;
     height: 40px;
@@ -674,14 +760,63 @@ figure.work > img.work-img {
     font-size: 2.5vw;
   }
 
+  /* CONTACT */
+  .contact-engagement {
+    margin: 0px 32px;
+  }
+
+  .contact-container {
+    width: 100vw;
+    flex-direction: column;
+  }
+
+  .form-container {
+    width: 100%;
+  }
+
+  .form {
+    width: 100%;
+  }
+
+  .colab {
+    align-self: center;
+    width: 150px;
+  } 
+
+  .contact-engagement > h1 {
+    font-size: 8vw;
+    letter-spacing: 2px;
+  }
+
+  .contact-engagement > p {
+    font-size: 4vw;
+    letter-spacing: 1.5px;
+  }
+
+  .patas {
+    display: none;
+  }
+
 }
 
-@media screen and (max-width: 768px) and (min-width: 426px) {
+@media screen and (max-width: 768px) and (min-width: 427px) {
   .footer {
     font-size: 1.5vw;
   }
 
   .nav-link {
     font-size: 2.3vw;
+  }
+
+  .colab {
+    position: relative;
+    margin-left: 0;
+  }
+  /* CONTACT */
+  .colab-img {
+    position: absolute;
+    top: 20%;
+    /* alig */
+    /* justify-self: center; */
   }
 }
