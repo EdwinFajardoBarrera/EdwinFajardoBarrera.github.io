@@ -21,6 +21,85 @@
   padding: 0;
   font-family: var(--font);
 }
+/*CONTACT */
+
+.contact-engagement {
+  text-align: center;
+}
+
+.contact-engagement > h1{
+  font-size: 3.3vw;
+  letter-spacing: 5px;
+}
+
+.contact-engagement > p{
+  font-size: 2vw;
+  letter-spacing: 2px;
+}
+.contact-container{
+  display: flex;
+  
+  margin: 0px 144px;
+  
+  
+  
+}
+
+.colab-img{
+  max-width: 4000px;
+  max-height: 300px;
+}
+
+.form {
+  background:linear-gradient(rgba(255,255,255,.8), rgba(255,255,255,.8)), url('images/mmmpatas-mobile.png');
+  background-repeat: no-repeat;
+  padding-left: 168px;
+  padding-top: 40px;
+}
+
+
+
+input[type=text], select {
+  background-color: transparent;
+  font: var(--font);
+  font-weight: bold;
+  width: 400px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+textarea{
+  
+  width: 400px;
+  background-color: transparent;
+  font-weight: bold;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+
+}
+
+input[type=submit] {
+  width: 200px;
+  font: var(--font);
+  font-weight: bold;
+  background-color: #97D7D0;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+
 
 /* SERVICES */
 
